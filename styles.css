@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI";
+  background-color: whitesmoke;
+}
+
+html {
+  --display-color: #ff6347;
+  --body-color: #ffffff;
+  --btn-color: #ffffff;
+  --hover-color: #ffffff;
+}
+
+.header {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.content {
+  border: 10px solid black;
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: var(--body-color);
+}
+.display {
+  width: 320px;
+  height: 120px;
+  background-color: var(--display-color);
+  border-bottom: 10px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-around;
+  padding-right: 10px;
+  overflow: auto;
+}
+.input {
+  font-size: 30px;
+  max-width: 320px;
+  display: inline-flex;
+  background: none;
+}
+.result {
+  font-size: 30px;
+  background: none;
+}
+
+.func {
+  margin-top: 10px;
+  height: 60px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background-color: var(--body-color);
+}
+
+.buttons {
+  padding: 5px;
+  height: 250px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  background-color: var(--body-color);
+}
+
+button {
+  border-radius: 10px;
+  border: 0;
+  margin: 5px;
+  font-size: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
+    rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  background-color: var(--btn-color);
+}
+
+button:hover {
+  background-color: var(--display-color);
+  opacity: 0.9;
+}
